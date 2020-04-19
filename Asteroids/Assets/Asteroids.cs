@@ -5,17 +5,20 @@ using UnityEngine;
 public class Asteroids : MonoBehaviour
 {
     private List<Transform> asteroids = new List<Transform>();
+    public GameObject prefab;
     public int asteroidNumbers = 3;
     public float spawnRange = 30;
     
     void Start()
     {
         for (int i = 0; i < asteroidNumbers; i++) {
-            GameObject go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            go.transform.position = randomSpawnPosition();
-            go.transform.parent = this.transform;
-            asteroids.Add(go.transform);
+            SpawnAsteroid();
         }
+    }
+
+    public void SpawnAsteroid() {
+        GameObject go = Instantiate(prefab, randomSpawnPosition(), Quaternion.identity, this.transform);
+        asteroids.Add(go.transform);
     }
 
     private Vector3 randomSpawnPosition() {

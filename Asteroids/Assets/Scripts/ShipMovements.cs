@@ -6,10 +6,13 @@ public class ShipMovements : MonoBehaviour
 {
     public float speed = 10f;
     public float turnSpeed = 200f;
-    Rigidbody rb;
+    private Rigidbody rb;
+
+    public static GameObject Ship;
     
     void Start()
     {
+        Ship = this.gameObject;
         rb = this.GetComponent<Rigidbody>();
     }
     

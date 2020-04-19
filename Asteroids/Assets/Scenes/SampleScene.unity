@@ -527,7 +527,7 @@ MonoBehaviour:
   bulletOrigin: {fileID: 1651100588}
   prefBullet: {fileID: 557650288626720345, guid: 865bf4be5b31a8248ac5cdde350e05aa,
     type: 3}
-  fireDelay: 1
+  fireDelay: 0.5
   lastFireTimestamp: 0
   bulletsParent: {fileID: 1263264084}
 --- !u!1 &1263264083
@@ -600,7 +600,7 @@ PrefabInstance:
     - target: {fileID: 8393526806290963206, guid: b67cb4e2c19ffb94ea6c5c518b5c830c,
         type: 3}
       propertyPath: m_Name
-      value: Asteroid
+      value: Asteroids
       objectReference: {fileID: 0}
     - target: {fileID: 1202603988120207213, guid: b67cb4e2c19ffb94ea6c5c518b5c830c,
         type: 3}
@@ -659,8 +659,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616408949064739684, guid: b67cb4e2c19ffb94ea6c5c518b5c830c,
         type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2419181218698819248, guid: 5c93d1a36fcf22b4b80dbc563016094d,
+        type: 3}
+    - target: {fileID: 7616408949064739684, guid: b67cb4e2c19ffb94ea6c5c518b5c830c,
+        type: 3}
+      propertyPath: asteroidNumbers
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408949064739684, guid: b67cb4e2c19ffb94ea6c5c518b5c830c,
+        type: 3}
       propertyPath: spawnRange
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b67cb4e2c19ffb94ea6c5c518b5c830c, type: 3}

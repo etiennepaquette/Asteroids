@@ -6,7 +6,7 @@ public class ShipAttacks : MonoBehaviour
 {
     public Transform bulletOrigin;
     public GameObject prefBullet;
-    public float fireDelay = 1.0f;
+    public float fireDelay = 0.5f;
     public float lastFireTimestamp = 0.0f;
     public Transform bulletsParent;
     
